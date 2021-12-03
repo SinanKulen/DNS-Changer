@@ -30,8 +30,8 @@ class DNSSettingManager {
                 debugPrint("DNSProxySample: load error")
                 return
             }
-            let dohSettings = NEDNSOverHTTPSSettings(servers: ["8.8.4.4"])
-            dohSettings.serverURL = URL(string: Constants.dohUrl + "dns-query")
+            let dohSettings = NEDNSOverHTTPSSettings(servers: ["1.1.1.1"])
+            dohSettings.serverURL = URL(string: Constants.dohUrl)
             self?.manager.dnsSettings = dohSettings
             
             completion()

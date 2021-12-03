@@ -21,11 +21,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func changeButtonClicked(_ sender: Any) {
+        dnsSettingManager.configure()
         proxyManager.enable()
     }
     @IBAction func offButtonClicked(_ sender: Any) {
         proxyManager.disable()
     }
+    
 }
 
 

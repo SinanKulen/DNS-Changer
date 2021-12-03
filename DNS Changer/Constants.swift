@@ -8,7 +8,6 @@
 import Foundation
 
 struct Constants {
-    static var dummyClientId : String {"dummy.client.id"}
-    static var dohUrl: String { "https://dns.google.com" }
+    static var dohUrl: String { "https://cloudflare-dns.com" }
     static var protocolIdentifier : String { "com.dnsproxy.test.DNSProxy-Extenstion"}
 }
